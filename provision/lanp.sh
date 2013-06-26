@@ -15,9 +15,13 @@ sudo apt-get install -y php5-mysql php5-curl php5-gd php5-intl php5-imap php5-mc
 #sudo apt-get install -y php5-ming 
 #sudo apt-get install -y php5-xcache
 
+sudo add-apt-repository ppa:brianmercer/nginx
+
 
 #Install NGINX for serving static files
 sudo apt-get install -y nginx
+sudo apt-get update -y
+sudo apt-get install -y nginx-custom
 
 #Install Apache
 sudo apt-get install -y apache2

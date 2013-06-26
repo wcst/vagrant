@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     web_config.vm.box = "web"
     web_config.vm.box_url = "http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-vagrant-i386-disk1.box"
     web_config.vm.network :private_network, ip: "192.168.33.10"
-    web_config.vm.synced_folder "/var/domains", "/var/domains"
+    web_config.vm.synced_folder "/var/domains", "/var/domains", :owner=>"vagrant", :extra => "dmode=777,fmode=666"
 	  web_config.vm.synced_folder "./config", "/vagrant/config"
     web_config.vm.synced_folder "/var/labs", "/var/labs"
     web_config.vm.provision :shell, :path => "provision/lanp.sh"
