@@ -14,11 +14,13 @@ The vagrant configuration file is setup to mount and share the `/private/var/dom
 
 Project Structure
 -----
-`private/var/domains
---sub.domain.com
-----site.conf
-----site.trapeze.conf
-`
+
+``` unicode
+/private/var/domains
+--------sub.domain.com
+---------site.conf
+---------site.trapeze.conf
+```
 
 Vagrant Commands
 -----
