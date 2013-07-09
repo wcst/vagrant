@@ -5,8 +5,8 @@ Vagrant Workstation (mysql,lamp,node,lnmp)
 
 ## Outline<a name='outline'> </a>
 
-[VirtualBox 4.2](https://www.virtualbox.org/wiki/Downloads)
-[Vagrant](http://www.vagrantup.com/)
+*[VirtualBox 4.2](https://www.virtualbox.org/wiki/Downloads)
+*[Vagrant](http://www.vagrantup.com/)
 ***
 
 Shared/Synced Folders
