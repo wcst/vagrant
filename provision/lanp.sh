@@ -53,7 +53,8 @@ sudo apt-get install -y git
 
 # Move Configuration files
 
-sudo cp /vagrant/config/nginx/nginx.conf /etc/nginx/sites-available/default
+sudo cp /vagrant/config/nginx/default /etc/nginx/sites-available/default
+sudo cp /vagrant/config/nginx/nginx.conf /etc/nginx/nginx.conf
 sudo cp /vagrant/config/apache/ports.conf /etc/apache2/ports.conf
 sudo cp /vagrant/config/cron/trapeze /var/spool/cron/crontabs/root
 sudo chmod 755 /var/spool/cron/crontabs/root
