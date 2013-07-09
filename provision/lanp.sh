@@ -75,6 +75,6 @@ cd /var/scripts/trapeze
 sudo php /usr/local/bin/composer.phar update
 sudo php /usr/local/bin/composer.phar install
 
-sudo php /var/scripts/trapeze/trapeze sites:scan
+#sudo php /var/scripts/trapeze/trapeze sites:scan
 #sudo echo "Done"
 #exit
