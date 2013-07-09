@@ -7,7 +7,6 @@ Vagrant Workstation (mysql,lamp,node,lnmp)
 
 * [VirtualBox 4.2](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrant](http://www.vagrantup.com/)
-***
 
 Shared/Synced Folders
 -----
