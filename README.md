@@ -26,15 +26,19 @@ private/var/domains/
 ## Vagrant Commands
 -----
 `vagrant up web` Starts & Provisions web server, mapped to:`192.168.33.10`
+
 `vagrant up db` Starts & Provisions database server, mapped to:`192.168.32.10`
 
 `vagrant suspend web` Powers off web server
+
 `vagrant suspend db` Powers off database server, retains data
 
 `vagrant resume web` Resumes/Starts web server
+
 `vagrant resume db` Resume/Starts database server
 
 `vagrant ssh web` SSH into web server
+
 `vagrant ssh db` SSH into database server 
 
 ***
