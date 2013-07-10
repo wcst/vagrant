@@ -42,5 +42,15 @@ private/var/domains/
 
 ***
 
+## Trapeze
+
+Loading the site configurations is simple. Use the below commands.
+
+`vagrant ssh web` 
+
+`sudo php /var/scripts/trapeze/trapeze sites:scan`
+
+
+
 
 
