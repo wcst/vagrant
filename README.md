@@ -50,6 +50,12 @@ Loading the site configurations is simple. Use the below commands.
 
 `sudo php /var/scripts/trapeze/trapeze sites:scan`
 
+## Phone & Non Local testing
+
+Traffic on the web box if forwarded from port 8011=>80 on the guest machine. To access from another device use `domain`.`my.ip`.xip.io or ex wcst.10.0.10.19.xip.io
+
+
+
 
 
 
