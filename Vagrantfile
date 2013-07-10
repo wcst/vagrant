@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     web_config.vm.network :private_network, ip: "192.168.33.10"
     web_config.vm.synced_folder "/private/var/domains/", "/var/domains/", :nfs => true
 	  web_config.vm.synced_folder "./config", "/vagrant/config"
-    web_config.vm.synced_folder "/var/labs", "/var/labs"
+    #web_config.vm.synced_folder "/var/labs", "/var/labs"
     web_config.vm.provision :shell, :path => "provision/lanp.sh"
   end
 
@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     db_config.vm.network :forwarded_port, guest: 22, host: 2223
     #db_config.vm.synced_folder "/var/domains", "/var/domains"
     db_config.vm.synced_folder "./config", "/vagrant/config"
-    db_config.vm.synced_folder "/var/labs", "/var/labs"
+    #db_config.vm.synced_folder "/var/labs", "/var/labs"
     #web_config.vm.forward_port 80, 8080
     db_config.vm.provision :shell, :path => "provision/sql.sh"
   end
