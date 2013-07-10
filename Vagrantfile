@@ -9,6 +9,7 @@ Vagrant.configure("2") do |config|
     web_config.vm.box = "web"
     web_config.vm.box_url = "http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-vagrant-i386-disk1.box"
     web_config.vm.network :private_network, ip: "192.168.33.10"
+    web_config.vm.network :forwarded_port, guest: 80, host: 8011
     web_config.vm.synced_folder "/private/var/domains/", "/var/domains/", :nfs => true
 	  web_config.vm.synced_folder "./config", "/vagrant/config"
     #web_config.vm.synced_folder "/var/labs", "/var/labs"
